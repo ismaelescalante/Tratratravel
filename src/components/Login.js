@@ -24,38 +24,38 @@ const Login = () => {
 
   return (
     <LoginContainer>
-      <LoginTitle> {registerMode ? 'Regístrate' : 'Log in'}</LoginTitle>
+      <LoginTitle> {registerMode ? 'REGÍSTRATE' : 'LOG IN'}</LoginTitle>
       <LoginForm>
         <>
         {registerMode ? (
             <>
-            Nombre de usuario<LoginInput
+            NOMBRE DE USUARIO<LoginInput
              onChange={e => setUsername(e.target.value)}
              value={username}
              type="text" 
             ></LoginInput>
 
-            Email<LoginInput
+            EMAIL<LoginInput
              onChange={e => setEmail(e.target.value)}
              value={email}
              type="email" 
             ></LoginInput>
             
             
-            Password<LoginInput
+            PASSWORD<LoginInput
             onChange={e => setPassword(e.target.value)}
             value={password}
             type="password" 
             ></LoginInput>
             
             </>
-            ) : (<>Email<LoginInput
+            ) : (<>EMAIL<LoginInput
               onChange={e => setEmail(e.target.value)}
               value={email}
               type="email" 
              ></LoginInput>
  
-             Password<LoginInput 
+             CONTRASEÑA<LoginInput 
              onChange={e => setPassword(e.target.value)}
              value={password}
              type="password" 

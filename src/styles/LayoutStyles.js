@@ -12,7 +12,6 @@ export const NavContainer = styled.div`
 `
 export const NavLogo = styled.h1`
     font-size: 24px;
-    padding: 1rem;
 `
 export const NavItems = styled.ul`
     list-style: none;
@@ -27,13 +26,15 @@ export const NavLinks = styled(NavLink)`
     padding: 0.5rem;
 
     &:hover{
-        color: #286078;
+        border-bottom: 2px solid #286078; 
     }
 `
 
 export const MainContent = styled.div`
     height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
+    background: linear-gradient(180deg, rgba(31,34,39,1) 0%, rgba(45,45,45,1) 100%);
+
 `
 
 export const LogoImg = styled.img`
