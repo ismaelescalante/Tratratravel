@@ -35,3 +35,8 @@ export const MainContent = styled.div`
     height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
 `
+
+export const LogoImg = styled.img`
+    width: 100%;
+    height: 70px;
+`
