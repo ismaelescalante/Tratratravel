@@ -8,7 +8,7 @@ const Layout = () => {
     <>
     <NavContainer>
         <NavLogo>
-            {/* <LogoImg src={Img}></LogoImg> */}Tratratravel
+            <LogoImg src={Img}></LogoImg>
         </NavLogo>
         <NavItems>
             <NavLinks to='/'>INICIO</NavLinks>
