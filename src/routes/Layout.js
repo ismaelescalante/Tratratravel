@@ -1,13 +1,14 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import { NavContainer, NavLogo, NavItems, NavLinks, MainContent } from '../styles/LayoutStyles'
+import { NavContainer, NavLogo, NavItems, NavLinks, MainContent, LogoImg } from '../styles/LayoutStyles'
+import Img from '../images/logo.png'
 
 const Layout = () => {
   return (
     <>
     <NavContainer>
         <NavLogo>
-            Tratratravel
+            {/* <LogoImg src={Img}></LogoImg> */}Tratratravel
         </NavLogo>
         <NavItems>
             <NavLinks to='/'>INICIO</NavLinks>
