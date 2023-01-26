@@ -1,4 +1,3 @@
-import "../styles/Form.css";
 import { useState } from "react";
 import React from "react";
 import axios from "axios";
@@ -9,6 +8,7 @@ import {
   options2,
   endPointIA,
 } from "../Config/formConfig";
+import { FormContainer, FormTitle, FormJson, FormOptions, FormInput, FormBtn } from "../styles/FormStyles";
 
 const Form = () => {
   const [saveCiudad, setSaveCiudad] = useState("");
@@ -26,66 +26,60 @@ const Form = () => {
     setSaveOption2(event.target.value);
   };
 
-  const sendData = async () => {
+  const sendData = async (e) => {
+    e.preventDefault()
     console.log(`${process.env.REACT_APP_MY_KEY}`)
     const datoTravel = {
       model: "text-davinci-003",
-      prompt: `Soy de ${saveCiudad}, recomiéndame un listado de 2 lugares dentro del territotio español para viajar que tenga ${saveOption1} en el que se pueda disfrutar de ${saveOption2} devuelveme la respuesta en Json`,
-      temperature: 0,
-      max_tokens: 300,
+      prompt: `Soy de ${saveCiudad}, recomiéndame un listado de 2 lugares dentro del territotio español para viajar que tenga ${saveOption1} en el que se pueda disfrutar de ${saveOption2}`,
+      temperature: 0.5,
+      max_tokens: 400,
     };
 
     try {
       const data = await axios.post(endPointIA, datoTravel, datoHeader);
-
+      console.log(data)
       setExito("Cargando respuesta ...");
-      setTimeout(() => {
+    
         setExito(data.data.choices[0].text);
-      }, "1000");
+      
+      
     } catch (err) {
       setExito("error");
     }
   };
 
   return (
-    <div className="contenedorGen">
-      <div className="contenedorIzq">
-        <div className="contenedorJson">{exito}</div>
-      </div>
-      <div className="contenedorDer">
-        <label>Soy de </label>
-        <select onChange={onOptionChangeCiudad}>
+    <FormContainer>
+      <FormTitle>¿A DÓNDE VAMOS?</FormTitle> 
+      {exito ? <FormJson>{exito}</FormJson> : <FormOptions>
+        ¿Desde dónde viajas?<FormInput onChange={onOptionChangeCiudad}>
           <option>Elige una opción</option>
           {ciudad.map((option, index) => {
             return <option key={index}>{option}</option>;
           })}
-        </select>
-        <br />
-        <br />
-        <br />
-        <label>Texto 1 </label>
-        <select onChange={onOptionChangeHandler}>
+        </FormInput>
+        ¿Qué entorno prefieres? <FormInput onChange={onOptionChangeHandler}>
           <option>Elige una opción</option>
           {options.map((option, index) => {
             return <option key={index}>{option}</option>;
           })}
-        </select>
-        <br />
-        <br />
-        <br />
-        <label>Texto 2 </label>
-        <select onChange={onOptionChangeHandler2}>
+        </FormInput>
+        ¿Cuáles son tus intereses?<FormInput onChange={onOptionChangeHandler2}>
           <option>Elige una opción</option>
           {options2.map((option, index) => {
             return <option key={index}>{option}</option>;
           })}
-        </select>
-        <br />
-        <br />
-        <br />
-        <button onClick={sendData}>Enviar</button>
-      </div>
-    </div>
+        </FormInput>
+        <FormBtn onClick={sendData}>ENVIAR</FormBtn>
+        </FormOptions>}
+     
+      
+      
+        
+    </FormContainer>
+      
+    
   );
 };
 

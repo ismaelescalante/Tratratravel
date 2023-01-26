@@ -6,6 +6,9 @@ import Img from '../images/logo.png'
 const Layout = () => {
   return (
     <>
+   
+    
+    <MainContent>
     <NavContainer>
         <NavLogo>
             <LogoImg src={Img}></LogoImg>
@@ -16,7 +19,11 @@ const Layout = () => {
             <NavLinks to='login'>LOGIN</NavLinks>
         </NavItems>
     </NavContainer>
-    <MainContent><Outlet /></MainContent>
+    
+    <Outlet />
+    
+    </MainContent>
+    
     </>
   )
 }
