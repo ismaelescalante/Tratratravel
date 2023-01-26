@@ -1,14 +1,17 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
+
+
 export const NavContainer = styled.div`
-    background-color: #070707;
-    color: white;
+    background-color: #333;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-family: 'Source Sans Pro', sans-serif;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+
 `
 export const NavLogo = styled.h1`
     font-size: 24px;
@@ -33,7 +36,6 @@ export const NavLinks = styled(NavLink)`
 export const MainContent = styled.div`
     height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
-    background: linear-gradient(180deg, rgba(31,34,39,1) 0%, rgba(45,45,45,1) 100%);
 
 `
 

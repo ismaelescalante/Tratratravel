@@ -5,6 +5,7 @@ const Login = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [username, setUsername] = useState('')
+    const [city, setCity] = useState('')
     const [registerMode, setRegisterMode] = useState(false)
 
     const processChange = e => {
@@ -24,6 +25,8 @@ const Login = () => {
 
   return (
     <LoginContainer>
+      
+      
       <LoginTitle> {registerMode ? 'REGÍSTRATE' : 'LOG IN'}</LoginTitle>
       <LoginForm>
         <>
@@ -35,6 +38,12 @@ const Login = () => {
              type="text" 
             ></LoginInput>
 
+            CIUDAD<LoginInput
+             onChange={e => setCity(e.target.value)}
+             value={city}
+             type="text" 
+            ></LoginInput>
+
             EMAIL<LoginInput
              onChange={e => setEmail(e.target.value)}
              value={email}
@@ -42,7 +51,7 @@ const Login = () => {
             ></LoginInput>
             
             
-            PASSWORD<LoginInput
+            CONTRASEÑA<LoginInput
             onChange={e => setPassword(e.target.value)}
             value={password}
             type="password" 
@@ -61,12 +70,15 @@ const Login = () => {
              type="password" 
              ></LoginInput>
              </>)}
-        <LoginBtn onClick={registerMode ? processRegister : processLogin}>{registerMode ? 'Regístrate' : 'Log in'}</LoginBtn>
+        <LoginBtn onClick={registerMode ? processRegister : processLogin}>{registerMode ? 'REGÍSTRATE' : 'LOG IN'}</LoginBtn>
         <LoginChange onClick={processChange}>{registerMode ? '¿Ya tienes cuenta?': '¿No estás registrado?'}</LoginChange>
         </>
       </LoginForm>
+      
+     
     </LoginContainer>
   )
 }
 
 export default Login
+
