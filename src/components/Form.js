@@ -2,6 +2,8 @@ import { useState } from "react";
 import React from "react";
 import axios from "axios";
 // import Load from "../assets/animated/load.gif";
+import ImageSlider from './ImageSlider'
+import SliderData from "./SliderData";
 import { FrasesSabiasQue } from "../assets/frasesLargas";
 import {
   datoHeader,
