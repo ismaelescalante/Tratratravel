@@ -139,6 +139,7 @@ const Form = () => {
   };
   
   return (
+    <>
     <FormContainer>
       <FormTitle>¿A DÓNDE VAMOS?</FormTitle> 
       {exito ? <FormJson>{exito}<br /><br /><FormBtn onClick={reset}>volver</FormBtn></FormJson> : <FormOptions>
@@ -164,7 +165,8 @@ const Form = () => {
         </FormOptions>}
      
     </FormContainer>
-      
+      <ImageSlider slides={SliderData}></ImageSlider>
+      </>
     
   );
 };
