@@ -1,4 +1,5 @@
 const token = `${process.env.REACT_APP_MY_KEY}`;
+console.log(token)
 export const datoHeader = {
   headers: {
     "Content-Type": "application/json",

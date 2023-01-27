@@ -41,5 +41,6 @@ export const MainContent = styled.div`
 
 export const LogoImg = styled.img`
     width: 100%;
-    height: 70px;
+    height: 80px;
+    margin-top: 5px;
 `
