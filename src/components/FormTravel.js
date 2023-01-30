@@ -147,11 +147,9 @@ const FormTravel = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
+
     <>
-=======
-    
->>>>>>> cb54814073dd1bb27223850e7886d0dc8b288517
+
     <FormContainer>
       <FormTitle>¿A DÓNDE VAMOS?</FormTitle>
       <div className="containerCardIA">
