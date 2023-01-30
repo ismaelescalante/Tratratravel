@@ -11,7 +11,8 @@ body{
     transform:prespective(600px) translate(-50%,-50%);
     transform:skewY(15deg);
     transition:0.5s;
-    font-size: 1.5px;
+    font-size: 1.25px;
+   
   }
   
   .center:hover{
@@ -37,11 +38,10 @@ body{
   }
   
   
-  
   .center h1 span:nth-child(2){
     color:#286078;
     transform:translate(-50%,-50%) skewX(-60deg);
-    left:-38px;
+    left:-28px;
     clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
   }
   
@@ -66,7 +66,7 @@ body{
     padding-top: 200px;
     justify-content: center;
     font-family:    Arial, Helvetica, sans-serif;
-    font-size:      80px;
+    font-size:      60px;
     text-shadow: 4px 0 #000, -2px 0 #ccc, 0 2px #ccc, 0 -5px #000,
     1px 1px #ccc, -1px -7px #ccc, 1px -1px #ccc, -1px 1px #000;
   }
@@ -99,9 +99,5 @@ body{
     background-color: #286078;
     border-radius:40px; 
     border: 1px black solid; overflow: hidden
-  
-    
-   
-  
 
 }
