@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 import Login from "../components/Login";
 import Landing from "../components/Landing";
-import Form from "../components/Form";
+import FormTravel from "../components/FormTravel";
 import Panel from "../components/Panel";
 
 
@@ -17,7 +17,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'form',
-                element: <Form />
+                element: <FormTravel/>
             },
             {
                 path: 'login',

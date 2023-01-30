@@ -2,8 +2,8 @@ import { useState } from "react";
 import React from "react";
 import axios from "axios";
 // import Load from "../assets/animated/load.gif";
-import ImageSlider from './ImageSlider'
-import SliderData from "./SliderData";
+import ImageSlider from '../components/ImageSlider'
+import SliderData from "../components/SliderData";
 import { FrasesSabiasQue } from "../assets/frasesLargas";
 import {
   datoHeader,
@@ -86,7 +86,7 @@ const Form = () => {
         
         setSaveResult(arrayRes)
         
-        setExito(textoForm + saveResult[0] + " , " + saveResult[3]);
+        saveResult[0] == undefined ? setExito("") : setExito(textoForm + saveResult[0] + " , " + saveResult[3]);
         
       
     } catch (err) {
