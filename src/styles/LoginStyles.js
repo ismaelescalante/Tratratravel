@@ -8,6 +8,7 @@ export const LoginContainer = styled.div`
     align-items: center;
     height: 100%;
     background-size: cover;
+    background-size: 100% 100%;
     background-image: url(${img});
 `
 export const LoginTitle = styled.h1`

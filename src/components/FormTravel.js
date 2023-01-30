@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import React from "react";
-import axios from "axios";
 import "../styles/FormTravel.css";
 import {
   faInfo,
@@ -33,6 +32,7 @@ const FormTravel = () => {
   const [saveCustom, setSaveCustom] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isError2, setIsError2] = useState("");
+
 
   const onOptionChangeCiudad = (event) => {
     const resultado =
@@ -147,7 +147,11 @@ const FormTravel = () => {
   }, []);
 
   return (
+<<<<<<< HEAD
     <>
+=======
+    
+>>>>>>> cb54814073dd1bb27223850e7886d0dc8b288517
     <FormContainer>
       <FormTitle>¿A DÓNDE VAMOS?</FormTitle>
       <div className="containerCardIA">
