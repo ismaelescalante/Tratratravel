@@ -33,7 +33,7 @@ const Login = () => {
         const response = await axios.post("http://localhost:5000/users/", newUser)
         const token = response.headers["x-auth-token"]
         localStorage.setItem('token', token)
-        navigate('/')
+        navigate('/form')
       } catch (error) {
         console.log(error)
         if(error.response.data === "\"email\" is not allowed to be empty"){
@@ -64,7 +64,7 @@ const Login = () => {
         const token = response.headers["x-auth-token"]
         localStorage.setItem('token', token)
         dispatch({type: 'login'})
-        navigate('/')
+        navigate('/form')
       } catch (error) {
         console.log(error)
         if(error.response.data === "\"email\" is not allowed to be empty"){
