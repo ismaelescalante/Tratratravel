@@ -14,7 +14,7 @@ const Layout = () => {
         <NavLogo>
             <LogoImg src={Img}></LogoImg>
         </NavLogo>
-        <NavItems>
+        
    <div className="center">
       <h1>
     <span>TRATRATRAVEL</span>
@@ -24,8 +24,9 @@ const Layout = () => {
       </h1>
     </div>
   
-   </NavItems>
-        <NavItems>
+  
+        <NavItems style={{position: "relative", left: "0",
+    top: "0"}}>
             <NavLinks to='/'>INICIO</NavLinks>
             <NavLinks to='form'>BUSCADOR</NavLinks>
             <NavLinks to='login'>LOGIN</NavLinks>

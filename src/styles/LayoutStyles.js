@@ -21,12 +21,14 @@ export const NavItems = styled.ul`
     display: flex;
     flex-direction: row;
     padding: 0.5rem;
+    
 `
 export const NavLinks = styled(NavLink)`
     font-size: 18px;
     color: #CACBCD;
     text-decoration: none;
     padding: 0.5rem;
+  
 
     &:hover{
         border-bottom: 2px solid #286078; 
