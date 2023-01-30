@@ -18,8 +18,8 @@ export const WelcomeGreet = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(${Img2});
-  
     
+  
     
 `
 export const WelcomeAbout = styled.div`
