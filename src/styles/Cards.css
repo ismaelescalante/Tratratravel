@@ -57,6 +57,7 @@ z-index: 1;
     letter-spacing: 0.5px;
     line-height: 22px;
     color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
 }
 .containerOptions{
     display: flex;
