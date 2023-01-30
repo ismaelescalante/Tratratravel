@@ -20,6 +20,7 @@ export const NavItems = styled.ul`
     list-style: none;
     display: flex;
     flex-direction: row;
+
     padding: 0.5rem;
     
 `

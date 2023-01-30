@@ -7,8 +7,7 @@ import {WelcomeImg} from "../styles/LandingStyles";
 const Layout = () => {
   return (
     <>
-   
-    
+  
     <MainContent>
     <NavContainer>
         <NavLogo>
@@ -20,10 +19,8 @@ const Layout = () => {
     <span>TRATRATRAVEL</span>
     <span>TRATRATRAVEL</span>
     <span>TRATRATRAVEL</span>
-  
       </h1>
     </div>
-  
   
         <NavItems style={{position: "relative", left: "0",
     top: "0"}}>
