@@ -9,7 +9,6 @@ export const FormContainer = styled.div`
     height: 100vh;
     background-image: url(${img});
     background-size: cover;
-    /* background-size: 1430px 687px; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: white;

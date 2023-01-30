@@ -48,7 +48,7 @@ const FormTravel = () => {
   const slides = [
     {
       iconElement: faInfo,
-      title: "bienvenido",
+      title: "comenzamos",
       description:
         "¡Hola! Estoy aquí para ayudarte a decidir tu destino de vacaciones. ¿Cuáles son tus preferencias? ¿Prefieres un destino con playas, montañas, ciudades o algo más conectado con la naturaleza? ¿Cuales son tus intereses principales al viajar? Estas preguntas me ayudarán a recomendarte el destino perfecto para tus vacaciones.",
     },
@@ -123,7 +123,7 @@ const FormTravel = () => {
           <br />
           <br />
           {saveResultFinal ? (
-            <>Ha elegido : {saveResultFinal[0]}</>
+            <>Has elegido : {saveResultFinal[0]}</>
           ) : (
             saveResultFinal
           )}{" "}
@@ -134,7 +134,7 @@ const FormTravel = () => {
       iconElement: faCheck,
       title: "Felicidades",
       description:
-        "Su elección ha sido guardada , a continuacion dispondra en su zona privada de todas la posibilidades que ponemos a su disposición.",
+        "Hemos guardado tu elección, pulsa en Viajar para ver todas la posibilidades que te ofrecemos para tu viaje.",
     },
   ];
 
