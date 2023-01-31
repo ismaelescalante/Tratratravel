@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import { SliderData } from './SliderData';
+
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+/* import UserConsumer from "../hooks/useDatos";
+
+
+const [saveResultFinal, setSaveResultFinal] = UserConsumer(); */
 
 const ImageSlider = ({ slides }) => {
     console.log(typeof slides, slides);
@@ -21,6 +25,7 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
+    <>
     <section className='slider'>
       <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
       <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
@@ -37,6 +42,11 @@ const ImageSlider = ({ slides }) => {
         );
       })}
     </section>
+{/*     <section>
+<div id="searchWidget" style="width:300px;height:600px;"><iframe id="widgetIframe" src="https://www.expedia.com/marketing/widgets/searchform/widget?wtt=5&tp1=tratratravel&tp2=tratratravel&lob=H,FH,F,CA,A&des=&wbi=666699&olc=FFFFFF&whf=4&hfc=FFFFFF&wif=4&ifc=&wbc=286078&wbf=4&bfc=FFFFFF&wws=2&sfs=H600FW300F&langid=1033" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+</div>
+      </section> */}
+      </>
   );
 };
 
