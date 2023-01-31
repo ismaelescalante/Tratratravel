@@ -1,33 +1,42 @@
 import "../styles/Landing.css";
 import React from 'react'
-import {WelcomeImg, WelcomeGreet, WelcomeAbout} from "../styles/LandingStyles";
+import {useNavigate} from 'react-router-dom'
+import {WelcomeImg, WelcomeGreet, WelcomeAbout, WelcomeTitle, AboutTitle, AboutP, AboutBtn} from "../styles/LandingStyles";
 
 const Landing = () => {
+
+  const navigate = useNavigate()
+
+  const start = () => {
+    navigate('login')
+  }
   return (
     <>
 
    <WelcomeImg >
-   <h1 className="greet" >
+   <WelcomeTitle>
     TE DAMOS <br></br> LA BIENVENIDA <br></br>A TRATRATRAVEL
-    </h1>
+    </WelcomeTitle>
    </WelcomeImg>
 
    <WelcomeAbout > 
-    <h1 className="aboutTitle" >
+    <AboutTitle >
     ¿Qué es<br></br> Tra <br></br>Tra<br></br> Travel?
-    </h1>
-    <div className="aboutText">
-    Tratratravel se esfuerza por ofrecer la mejor experiencia de viaje posible. Utilizamos la inteligencia artificial para recomendar los mejores destinos para cada cliente, basándonos en sus deseos y preferencias. 
-    </div>
+    </AboutTitle>
+    <AboutP>
+    Tratratravel utiliza inteligencia artificial para recomendar los mejores destinos para cada cliente, basándonos en sus deseos y preferencias. Las nuevas tecnologías están a nuestro servicio para ofrecernos las mejores experiencias.
+    </AboutP>
   </WelcomeAbout>
 
   <WelcomeGreet> 
-  <h1 className="aboutTitle" >
+  <AboutTitle >
     ¿Qué es<br></br> Tra <br></br>Tra<br></br> Travel?
-    </h1>
-    <div className="aboutText">
-    Tratratravel se esfuerza por ofrecer la mejor experiencia de viaje posible. Utilizamos la inteligencia artificial para recomendar los mejores destinos para cada cliente, basándonos en sus deseos y preferencias. 
-    </div>
+    </AboutTitle>
+    <AboutP>
+    ¿Quieres comenzar a usar Tratratravel? Regístrate ahora para tener una experiencia de usuario totalmente personalizada.
+    <AboutBtn onClick={start}>COMIENZA YA</AboutBtn>
+    </AboutP>
+    
   </WelcomeGreet>
 
  </>
