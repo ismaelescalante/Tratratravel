@@ -1,0 +1,38 @@
+.divFichaTecnica{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 510;
+    background-color: hsla(0, 0%, 0%, 0.80);
+
+}
+
+.infoFicha{
+    width: fit-content;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.closeBTN{
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 2px;
+}
+
+.infoFicha img{
+    margin: 0 10%;
+    border-radius: 10px;
+    border: 2px solid black;
+    max-width: 350px;
+}
+
+.infoFicha .listados{
+    display: flex;
+}
+
+
