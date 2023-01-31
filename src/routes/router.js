@@ -5,6 +5,7 @@ import Landing from "../components/Landing";
 import FormTravel from "../components/FormTravel";
 import Panel from "../components/Panel";
 import Advice from "../components/Advice"
+import AllProvinces from "../components/AllProvinces";
 
 
 export const router = createBrowserRouter([
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
             {
                 path: 'panel',
                 element: <Panel />
+            },
+            {
+                path: 'mapa',
+                element: <AllProvinces />
             }
         ]
     }
