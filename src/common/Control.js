@@ -10,6 +10,7 @@ import {
   datoHeader,
 } from "../Config/formConfig";
 import UserConsumer from "../hooks/useDatos";
+import {useNavigate} from "react-router-dom"
 
 const isFirst = (currentIndex) => {
   return currentIndex === 0;
@@ -38,6 +39,8 @@ export default function Controls({
   setSaveCustom,
 }) {
   const [saveResultFinal, setSaveResultFinal] = UserConsumer();
+
+  const navigate = useNavigate()
 
   const nextBtnOption0 = async () => {
     // setSaveCiudad("")
@@ -122,7 +125,9 @@ export default function Controls({
   };
 
   const nextBtnOption3 = () =>
-    alert("Datos disponible globlamente :" + saveResultFinal  + " , Redirect al Panel de control , (los datos de las 2 consultas se han enviado a los enpoint de Data)");
+
+  navigate('/advice')
+
   return (
     <>
       {isError2}
