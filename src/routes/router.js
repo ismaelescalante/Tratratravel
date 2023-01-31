@@ -4,8 +4,7 @@ import Login from "../components/Login";
 import Landing from "../components/Landing";
 import FormTravel from "../components/FormTravel";
 import Panel from "../components/Panel";
-import ImageSlider from "../components/ImageSlider";
-import SliderData from "../components/SliderData"
+import Advice from "../components/Advice"
 
 
 export const router = createBrowserRouter([
@@ -23,7 +22,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'advice',
-                element: <ImageSlider slides={SliderData}></ImageSlider>
+                element: <Advice />
             },
             {
                 path: 'login',

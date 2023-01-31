@@ -1,9 +1,15 @@
+/* 
+import UserConsumer from "../hooks/useDatos";
 
 
+const [saveResultFinal, setSaveResultFinal] = UserConsumer();
 
+ */
 
  let images = [];
  let SliderData=[]
+
+
   fetch(`https://pixabay.com/api/?key=32822302-e0bccee14336fc56618e7f358&q=madrid+city&image_type=photo&pretty=true`)
     .then(res => res.json())
     .then(data => {
@@ -22,3 +28,4 @@ console.log(SliderData);
 
 
     module.exports=SliderData
+ /*    export default SliderData; */
