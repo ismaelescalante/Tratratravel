@@ -63,6 +63,7 @@ export default function Controls({
 
     try {
       setSaveResult("");
+      setSaveResultFinal('')
       const data = await axios.post(endPointIA, datoTravel, datoHeader);
 
       const arrayRes = [];
@@ -124,9 +125,13 @@ export default function Controls({
     }
   };
 
-  const nextBtnOption3 = () =>
-
-  navigate('/advice')
+  const nextBtnOption3 = () =>{
+    navigate('/advice')
+    
+  }
+  
+  
+ 
 
   return (
     <>
