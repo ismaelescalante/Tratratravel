@@ -123,7 +123,7 @@ const FormTravel = () => {
           )}
           <br />
           <br />
-          {saveResultFinal ? (
+          {saveResultFinal && saveResult ? (
             <>Has elegido : {saveResultFinal[0]}</>
           ) : (
             saveResultFinal

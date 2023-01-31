@@ -2,6 +2,7 @@ import React from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { NavContainer, NavLogo, NavItems, NavLinks, MainContent, LogoImg } from '../styles/LayoutStyles'
 import Img from '../images/logo.png'
+import ScrollToTop from '../components/ScrollToTop'
 import {WelcomeImg} from "../styles/LandingStyles";
 import jwt_decode from 'jwt-decode'
 
@@ -30,7 +31,7 @@ const Layout = () => {
 
   return (
     <>
-  
+    <ScrollToTop />
     <MainContent>
     <NavContainer>
         <NavLogo>
