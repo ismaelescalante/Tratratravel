@@ -3,7 +3,7 @@ body{
     padding:0;
     font-family:sans-serif;
     background:#000;
-
+    width: 100%;
   }
   
   .center{
@@ -89,20 +89,21 @@ body{
   .aboutText{
     color: white;
     display: relative;
-    width: 100%;
+    width: 60%;
     padding-top: 40px;
     padding-left: 10px;
     margin: 50px;
     margin-left: 200px;
     font-family:    Arial, Helvetica, sans-serif;
     font-size: 30px;
-    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -5px #000,
-    1px 1px #000, -1px -2px #000, 1px -1px #000, -1px 1px #000;
-    background-color: #286078;
+    /* text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -5px #000,
+    1px 1px #000, -1px -2px #000, 1px -1px #000, -1px 1px #000; */
+    text-shadow: 2px 2px 1px black;
+    /* background-color: #286078; */
     border-radius:40px; 
-    border: 1px black solid; 
+    /* border: 1px black solid;  */
     overflow: hidden;
-    opacity: 70%;
+    /* opacity: 70%; */
   
 
 }

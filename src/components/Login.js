@@ -30,7 +30,7 @@ const Login = () => {
       }
 
       try {
-        const response = await axios.post("http://localhost:5000/users/", newUser)
+        const response = await axios.post("https://travel-db-wy62.onrender.com/users/", newUser)
         const token = response.headers["x-auth-token"]
         localStorage.setItem('token', token)
         navigate('/form')
@@ -60,9 +60,11 @@ const Login = () => {
       }
 
       try {
-        const response = await axios.post("http://localhost:5000/auth/", loggedUser)
+        console.log(loggedUser)
+        const response = await axios.post("https://travel-db-wy62.onrender.com/auth", loggedUser)
         const token = response.headers["x-auth-token"]
         localStorage.setItem('token', token)
+        console.log('logeado')
         dispatch({type: 'login'})
         navigate('/form')
       } catch (error) {

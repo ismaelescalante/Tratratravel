@@ -21,7 +21,8 @@ const Layout = () => {
   const currentUser = getCurrentUser()
 
   const logout = async (e) => {
-    localStorage.removeItem('token')
+    e.preventDefault()
+    localStorage.removeItem('token');
     navigate('/')
   }
 
