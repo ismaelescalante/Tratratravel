@@ -21,7 +21,7 @@ import {
 } from "../styles/FormStyles";
 import LoadTravel from "../images/loadTravel.webp";
 import UserConsumer from "../hooks/useDatos";
-import SliderData from "../components/SliderData"
+
 
 const FormTravel = () => {
   const [saveResultFinal, setSaveResultFinal] = UserConsumer();
