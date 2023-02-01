@@ -58,6 +58,7 @@ const Layout = () => {
             
 
         </NavItems>
+     
     </NavContainer>
     
     <Outlet currentUser={currentUser}/>
