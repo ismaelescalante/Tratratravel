@@ -6,11 +6,6 @@
   position: relative;
   max-height: 100vh;
   max-width:500px;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  align-items: center;
-  margin-top: 200px;
   margin-left: 50px;
 }
 
@@ -55,9 +50,4 @@
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
-}
-
-
-.searchWidget{
- margin-left: 700px
 }
