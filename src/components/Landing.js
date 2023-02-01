@@ -1,6 +1,5 @@
 import "../styles/Landing.css";
 import React, {useEffect} from 'react'
-import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
 import {WelcomeImg, WelcomeGreet, WelcomeAbout, WelcomeTitle, AboutTitle, AboutP, AboutBtn} from "../styles/LandingStyles";
 

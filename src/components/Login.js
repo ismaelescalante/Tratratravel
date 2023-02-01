@@ -1,4 +1,4 @@
-import React, { lazy, useState } from 'react'
+import React, { useState } from 'react'
 import { LoginContainer, LoginForm, LoginInput, LoginBtn, LoginTitle, LoginChange } from '../styles/LoginStyles'
 import {useNavigate} from 'react-router-dom'
 import UserConsumer from '../hooks/useDatos'
@@ -66,7 +66,7 @@ const Login = () => {
         localStorage.setItem('token', token)
         console.log('logeado')
         dispatch({type: 'login'})
-        navigate('/form')
+        navigate('/')
       } catch (error) {
         console.log(error)
         if(error.response.data === "\"email\" is not allowed to be empty"){
