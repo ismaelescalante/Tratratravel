@@ -11,11 +11,11 @@ const PopOver = ({provincia, comAut}) => {
       <br />
       <h4>Número de habitantes: </h4>
       <p>{provincia.habitantes}</p>
-{/*       
+      <br />
       <h4>Pueblos que visitar:</h4>
-      <ul>
+      <ul className='uList'>
         {provincia.pueblosDestacados.map((pueblo, index) => <li key={index}>{pueblo}</li>)}
-      </ul> */}
+      </ul>
     </div>
   )
 }

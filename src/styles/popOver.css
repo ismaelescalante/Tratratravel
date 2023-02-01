@@ -16,6 +16,10 @@
     text-transform: uppercase;
 }
 
-.containerPopOverProvincia p{
+.containerPopOverProvincia p, ul{
     margin-left: 40px;
+}
+
+.uList {
+    list-style-type: none;
 }

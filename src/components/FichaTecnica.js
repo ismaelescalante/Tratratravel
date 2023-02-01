@@ -6,8 +6,9 @@ const FichaTecnica = ({provinceInfo, setFichaTecnica, comAut}) => {
     return (
      <div className='divFichaTecnica'>
          <div className='imgLanding' style={{ backgroundImage: `url(${provinceInfo.img})` }}>
-             <p className='closeBTN' onClick={() => setFichaTecnica('')}>X</p>
-             <p className='imgTitle'>{`${provinceInfo.nombre}`}</p>
+             <div className='closeBTN' onClick={() => setFichaTecnica('')}>
+                <p className="xBTN">X</p>
+             </div>
          </div>
          <div className="provinciaInfo">
             <p className="title">{provinceInfo.nombre}</p>
@@ -18,18 +19,21 @@ const FichaTecnica = ({provinceInfo, setFichaTecnica, comAut}) => {
                 <p className="hab">Habitantes</p>
                 <p className="dato">{provinceInfo.habitantes} habitantes</p>
             </div>
-            <hr />
-            <div className="listas">
-                <p>listados</p>
+         </div>
+         <div className="listas">
                 <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
+                    <p>Pueblos Destacados</p>
+                    {provinceInfo.pueblosDestacados.map((pueblo, index) => <li key={index}>{pueblo}</li>)}
+                </ul>
+                <ul>
+                    <p>Fiestas Populares</p>
+                    {provinceInfo.fiestasPopulares.map((fiesta, index) => <li key={index}>{fiesta}</li>)}
+                </ul>
+                <ul>
+                    <p>Platos Tipidos</p>
+                    {provinceInfo.platosTipicos.map((plato, index) => <li key={index}>{plato}</li>)}
                 </ul>
             </div>
-         </div>
      </div>
   )
 }
