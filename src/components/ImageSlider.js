@@ -32,8 +32,11 @@ useEffect(() => {
 
   <div className="slider">
    
-   { <button className="right-arrow" onClick={()=>current === 6 ? "": setCurrent(current + 1)} > + </button>}
-   <img  src={imagenArray.hits[current].largeImageURL} alt='travel image' className='image' /> 
+   { <button className="right-arrow" onClick={()=>current === imagenArray.hits.length - 1 ? "": setCurrent(current + 1)} > + </button>}
+   <img onError={({ currentTarget }) => {
+            currentTarget.onerror = null; // prevents looping
+            currentTarget.src = "https://wallpapercave.com/wp/wp3187292.jpg";
+          }} src={imagenArray.hits[current].largeImageURL} alt='travel image' className='image' /> 
    
    {   <button className="left-arrow" onClick={()=>current === 0 ? "":setCurrent(current - 1) } > - </button>}
   </div>
