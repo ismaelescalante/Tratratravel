@@ -8,10 +8,9 @@ export default function Card(props) {
     <> 
     <div className='icon-container'>
       <FontAwesomeIcon icon={props.iconElement} />
-      </div>
       <p className='title'>{props.title}</p>
       <p className='description'>{props.description}</p>
- 
+      </div>
     </>
   )
 }
