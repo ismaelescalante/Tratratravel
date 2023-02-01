@@ -34,7 +34,6 @@ export const WelcomeAbout = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  
     
     
 `
@@ -54,6 +53,12 @@ export const WelcomeTitle = styled.h1`
     @media(max-width: 715px){
         font-size: 45px;
     }
+
+    @media(max-width: 400px){
+        font-size: 32px;
+    }
+
+    
 `
 export const AboutTitle = styled.h2`
     color: white;
@@ -67,7 +72,7 @@ export const AboutTitle = styled.h2`
     1px 1px #ccc, -1px -7px #ccc, 1px -1px #ccc, -1px 1px #000;
     max-width: 100%;
 
-    @media(max-width: 501px){
+    @media(max-width: 643px){
         display: none;
     }
 `
@@ -97,9 +102,12 @@ export const AboutP = styled.p`
         font-size: 15px;
     }
 
-    @media(max-width: 685px){
-        font-size: 12px;
+    @media(max-width: 643px){
+        font-size: 15px;
+        background: none;
+        margin-left: 30px;
     }
+    
 
     @media(max-width: 545px){
         margin-left: 20px;

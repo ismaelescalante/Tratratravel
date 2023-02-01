@@ -33,7 +33,7 @@ useEffect(() => {
   <div className="slider">
    
    { <button className="right-arrow" onClick={()=>current === 6 ? "": setCurrent(current + 1)} > + </button>}
-   <img src={imagenArray.hits[current].largeImageURL} alt='travel image' className='image' /> 
+   <img  src={imagenArray.hits[current].largeImageURL} alt='travel image' className='image' /> 
    
    {   <button className="left-arrow" onClick={()=>current === 0 ? "":setCurrent(current - 1) } > - </button>}
   </div>
