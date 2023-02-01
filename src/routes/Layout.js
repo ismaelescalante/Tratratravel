@@ -49,7 +49,7 @@ const Layout = () => {
         <NavItems style={{position: "relative", left: "0",
     top: "0"}}>
             <NavLinks to='/'>INICIO</NavLinks>
-            <NavLinks to='/mapa'>MAPA</NavLinks>
+            <NavLinks to='/mapa'>DESTINOS</NavLinks>
             {currentUser ? <NavLinks to='form'>BUSCADOR</NavLinks> : null}
             
             {

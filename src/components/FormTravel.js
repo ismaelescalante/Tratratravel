@@ -36,7 +36,7 @@ const FormTravel = () => {
 
   const onOptionChangeCiudad = (event) => {
     const resultado =
-      ciudad.findIndex((word) => word == event.target.value) + 1;
+      ciudad.findIndex((word) => word === event.target.value) + 1;
     setSaveCiudad(resultado);
   };
   const onOptionChangeHandler = (event) => {
@@ -123,7 +123,7 @@ const FormTravel = () => {
           )}
           <br />
           <br />
-          {saveResultFinal && saveResult ? (
+          {saveResultFinal ? (
             <>Has elegido : {saveResultFinal[0]}</>
           ) : (
             saveResultFinal
