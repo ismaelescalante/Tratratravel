@@ -26,7 +26,7 @@ const Advice = () => {
     
     <AdviceWidget>
     <AdviceText>¿Listo para viajar?</AdviceText>
-      {<div id="searchWidget" style={{width: "300px", height: "450px"}}><iframe id="widgetIframe" src="https://www.expedia.com/marketing/widgets/searchform/widget?wtt=5&tp1=ismael&tp2=ismael&lob=H,FH,F&des=&wbi=333333&olc=000000&whf=4&hfc=FFFFFF&wif=4&ifc=000000&wbc=286078&wbf=4&bfc=FFFFFF&wws=1&sfs=H600FW300F&langid=1033" width="100%" height="100%" scrolling="no" frameborder="0"></iframe></div>}
+      {<div id="searchWidget" style={{width: "300px", height: "450px"}}><iframe id="widgetIframe" src="https://www.expedia.com/marketing/widgets/searchform/widget?wtt=5&lob=H,FH,F&des=&wbi=333333&olc=000000&whf=4&hfc=FFFFFF&wif=4&ifc=000000&wbc=286078&wbf=4&bfc=FFFFFF&wws=1&sfs=H600FW300F&langid=1033" width="100%" height="100%" scrolling="no" frameborder="0"></iframe></div>}
     </AdviceWidget>
   
     
