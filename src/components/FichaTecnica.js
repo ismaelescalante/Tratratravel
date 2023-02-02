@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/fichaTecnica.css'
 
 const FichaTecnica = ({provinceInfo, setFichaTecnica, comAut}) => {
-    console.log(comAut);
+
     return (
      <div className='divFichaTecnica'>
          <div className='imgLanding' style={{ backgroundImage: `url(${provinceInfo.img})` }}>
@@ -84,7 +84,7 @@ export default FichaTecnica
 // import '../styles/fichaTecnica.css'
 
 // const FichaTecnica = ({provinceInfo, setFichaTecnica}) => {
-//     console.log(provinceInfo.nombre);
+
 //     return (
 //     <div className='divFichaTecnica'>
 //         <div className='infoFicha'>

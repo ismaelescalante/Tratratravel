@@ -10,7 +10,7 @@ const Landing = () => {
       const getUsers = async () => {
         const startDb = await fetch("https://travel-db-wy62.onrender.com/users")
         const data = await startDb.json()
-        console.log(data)
+ 
       }
       getUsers()
   }, [])
