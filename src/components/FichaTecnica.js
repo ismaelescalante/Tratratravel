@@ -15,7 +15,7 @@ const FichaTecnica = ({provinceInfo, setFichaTecnica, comAut}) => {
             <hr />
             <div className='habYcom'>
                 <p className="ccaa">Comunidad Autonoma</p>
-                <p className="dato">incorporar dato</p>
+                <p className="dato">{provinceInfo.ccaa}</p>
                 <p className="hab">Habitantes</p>
                 <p className="dato">{provinceInfo.habitantes} habitantes</p>
             </div>
