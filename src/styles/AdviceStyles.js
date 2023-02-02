@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Img from '../images/airport.jpg'
+import Img2 from '../images/asturias.jpg'
 
 
 export const AdviceContainer = styled.div`
