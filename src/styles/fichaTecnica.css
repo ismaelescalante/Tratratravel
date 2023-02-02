@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    z-index: 510;
+    z-index: 501;
     background-color: hsla(0, 0%, 0%, 0.80);
 }
 
@@ -14,41 +14,64 @@
     max-height: 80vh;
     position: relative;
     width: 50%;
-    height: 70%;
+    height: 85%;
     box-shadow: 0 5px 10px black;
-    background: linear-gradient(transparent 80%, black);
+    background-image: linear-gradient(transparent 60%, black 85%);
     background-position: center;
     background-size: cover;
     border-radius: 15px;
-    z-index: 700;
+    z-index: 590;
 }
 
 .closeBTN{
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
-    border-radius: 3px;
+    color: rgb(0, 0, 0, 50%);
+    background-color: rgba(83, 137, 187, 20%);
+    border-radius: 0 13px 0 9px;
     cursor: pointer;
-    border: 1px solid black;
-    width: 20px;
-    height: 20px;
-    position: relative;
+    padding: 5px 10px;
+    transition: 0.75s;
+}
+.closeBTN:hover {
+    background-color: rgba(45, 75, 104, 0.9);
+    color: beige;
+    font-weight: 600;
+}
+.xBTN{
+    transition: 1s;
+}
+.xBTN:hover {
+    transform: rotateZ(360deg);
+}
+
+.proTitle {
+    position: absolute;
+    width: fit-content;
+    height: 5%;
+    padding: 10px;
+    margin: auto;
     top: 0;
     right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    z-index: 585;
+    transition: 0.5s;
+    box-shadow: 0 5px 10px black;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.imgTitle{
+.provinciaInfo {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: 25px;
-    color: white;
-}
-
-.divFichaTecnica .provinciaInfo {
-    position: absolute;
-    width: 40%;
+    width: 30%;
     height: 60%;
     padding: 15px;
     margin: auto;
@@ -57,28 +80,66 @@
     bottom: 0;
     left: 0;
     background: white;
-    z-index: 800;
+    z-index: 580;
     transition: 0.5s;
     box-shadow: 0 5px 10px black;
     border-radius: 15px;
+    justify-items: right;
 }
 
-/* .divFichaTecnica:hover .provinciaInfo{
-    left: 50%;
-} */
+.divFichaTecnica:hover .provinciaInfo {
+    right: 60%;
+}
+.divFichaTecnica:hover .listas {
+    left: 60%;
+}
 
 .provinciaInfo .title{
     font-size: 2rem;
 }
 
 .habYcom {
-    margin: 10px 0;
+    margin: 60px 0 0 20px;
 }
 
-.ccaa, .hab{
+.ccaa, .hab {
     font-weight: 900;
+    margin-top: 20px;
 }
 
 .dato {
-    margin: 5px 0 5px 20px;
+    margin-left: 20px;
+}
+
+.listas {
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    padding: 15px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    z-index: 570;
+    transition: 0.5s;
+    box-shadow: 0 5px 10px black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    justify-content: space-between;
+}
+
+.listas p {
+    font-weight: 700;
+}
+
+.listas ul {
+    list-style-type: none;
+}
+.listas li {
+    margin-right: 20px;
 }

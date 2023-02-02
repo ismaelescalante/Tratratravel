@@ -1,4 +1,4 @@
-ul {
+.CircleT {
     position: absolute;
     top: 20px;
     left: 38%;
@@ -7,21 +7,17 @@ ul {
     display: flex;
     list-style: none;
 }
-
-ul li {
+#CircleR  {
     width: 10px;
     height: 10px;
     background-color: rgba(0, 0, 0, 0.1);
     margin-right: 16px;
     border-radius: 50%;
-
 }
-
-ul li:last-child {
+#CircleR :last-child {
     margin-right: 0;
 }
-
-ul li.controlactive {
+#CircleR.controlactive {
     background-color:rgba(255, 255, 255, 0.644);
     box-shadow: 0;
 }
