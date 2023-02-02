@@ -102,7 +102,7 @@ const FormTravel = () => {
                 onClick={() =>
                   setSaveResultFinal(
                     saveResult.slice(0, 3),
-                    console.log(saveResultFinal)
+         
                   )
                 }
               >
@@ -113,7 +113,7 @@ const FormTravel = () => {
                 onClick={() =>
                   setSaveResultFinal(
                     saveResult.slice(3, 6),
-                    console.log(saveResultFinal)
+             
                   )
                 }
               >
