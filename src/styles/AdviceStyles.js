@@ -4,13 +4,13 @@ import Img2 from '../images/asturias.jpg'
 
 export const AdviceContainer = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-image: url(${Img});
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     @media(max-width: 900px){
         flex-wrap: wrap;
@@ -19,11 +19,27 @@ export const AdviceContainer = styled.div`
 
 
 export const AdviceImg = styled.div`
-    
+@media(max-width: 900px){
+       margin-top: 50px;
+    }
+
 `
 
 export const AdviceWidget = styled.div`
     padding: 1rem;
+    margin-top: 50px;
+
+    /* @media(max-width: 900px){
+        margin-top: 150px;
+    }
+
+    @media(max-width: 580px){
+       margin-top: 200px;
+    }
+
+    @media(max-width: 430px){
+       margin-top: 250px;
+    } */
 `
 
 export const AdviceText = styled.h2`
@@ -35,6 +51,11 @@ export const AdviceText = styled.h2`
 `
 
 export const AdviceResponsive = styled.div`
-    background-image: url(Img2);
+    background-image: url(${Img2});
     background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
 `
