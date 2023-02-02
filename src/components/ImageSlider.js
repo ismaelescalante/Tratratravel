@@ -8,10 +8,6 @@ const ImageSlider = () => {
   const [saveResultFinal, setSaveResultFinal] = UserConsumer();
   
 
-let images = ""
-let SliderData=[]
- 
-
 
 useEffect(() => {
 

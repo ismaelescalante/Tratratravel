@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { AdviceContainer, AdviceWidget, AdviceBg, AdviceImg, AdviceText, AdviceResponsive } from '../styles/AdviceStyles';
 import ImageSlider from "../components/ImageSlider";
 import UserConsumer from '../hooks/useDatos'
