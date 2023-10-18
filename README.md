@@ -1,7 +1,7 @@
 # Tratratravel
 This is a final project of a bootcamp developed by a team of Full Stack Developers and Data Scientists. This app uses artificial intelligence provided by OpenAI to give recommendations of places to travel within Spain based on the user's personal preferences.
 
-It has been developed using **React** on the Front End and **Node** for the Back End, with MongoDB as the database. It uses **React Leaflet** as well for the map display.
+It has been developed using **React** on the Front End and **Node** for the Back End, with **MongoDB** as the database. It uses **React Leaflet** as well for the map display.
 
 ## Screenshots
 
